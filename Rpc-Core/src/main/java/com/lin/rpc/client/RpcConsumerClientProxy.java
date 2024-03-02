@@ -1,4 +1,4 @@
-package com.lin.rpc;
+package com.lin.rpc.client;
 
 import com.lin.rpc.enity.RpcRequest;
 import com.lin.rpc.enity.RpcResponse;
@@ -30,7 +30,7 @@ public class RpcConsumerClientProxy implements InvocationHandler {
                 .interfaceName(method.getDeclaringClass().getName())
                 .methodName(method.getName())
                 .params(args)
-                .paramsType(method.getParameterTypes().getClass())
+                .paramsType(method.getParameterTypes())
                 .build();
 
         RpcConsumerClient rpcClient = new RpcConsumerClient();

@@ -1,4 +1,4 @@
-package com.lin;
+package com.lin.rpc.enity;
 
 import lombok.Builder;
 import lombok.Data;
@@ -26,6 +26,6 @@ public class RpcRequest implements Serializable {
     /**
      * 调用方法的参数类型
      */
-    private Class<?> paramsType;
+    private Class<?>[] paramsType;
 
 }

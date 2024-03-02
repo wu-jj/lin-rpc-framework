@@ -1,25 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="59592d0a-a1fd-43c5-8b94-14454bfdb299" name="Default Changelist" comment="" />
+    <list default="true" id="59592d0a-a1fd-43c5-8b94-14454bfdb299" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Rpc-Common/src/main/java/com/lin/rpc/enumeraction/RpcError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Rpc-Common/src/main/java/com/lin/rpc/exception/RpcException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/register/DefaultServiceRegistry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/register/ServiceRegister.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/server/RequestHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/server/RequestHandlerThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Consumer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Consumer/src/main/java/com/lin/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Consumer/src/main/java/com/lin/Consumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Provider-Common/src/main/java/com/lin/HelloObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/Provider-Common/src/main/java/com/lin/HelloObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Provider-Common/src/main/java/com/lin/HelloService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Provider-Common/src/main/java/com/lin/HelloService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Provider/src/main/java/com/lin/HelloServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/src/main/java/com/lin/HelloServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Provider/src/main/java/com/lin/TestServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/src/main/java/com/lin/TestServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Provider/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc-Common/src/main/java/com/lin/rpc/enity/RpcRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc-Common/src/main/java/com/lin/rpc/enity/RpcRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc-Common/src/main/java/com/lin/rpc/enity/RpcResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc-Common/src/main/java/com/lin/rpc/enity/RpcResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc-Common/src/main/java/com/lin/rpc/enumeraction/ResponseCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc-Common/src/main/java/com/lin/rpc/enumeraction/ResponseCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc-Core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc-Core/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/client/RpcConsumerClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/client/RpcConsumerClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/client/RpcConsumerClientProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/client/RpcConsumerClientProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/server/RpcProviderServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/server/RpcProviderServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/server/WorkerThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="2d8OJwtxSsCcOaU4q7lqyi03RbF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="D:/jar包/git_ruoyi" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.1575" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.lin" />
     </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.lin.rpc.server" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Consumer">
+    <configuration name="Consumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lin.Consumer" />
+      <module name="Consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lin.TestServer" />
+      <module name="Provider" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="lua.app" factoryName="Lua Application">
       <option name="program" value="lua.exe" />
       <option name="file" value="" />
@@ -30,6 +114,15 @@
       <option name="showConsole" value="true" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Consumer" />
+        <item itemvalue="Application.TestServer" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -41,15 +134,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1709386170983</updated>
-      <workItem from="1709386172851" duration="1000" />
+      <workItem from="1709386172851" duration="7259000" />
+      <workItem from="1709404890392" duration="4362000" />
     </task>
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="446" y="92" key="#com.intellij.ide.util.MemberChooser" timestamp="1709383353933">
+    <state x="233" y="35" key="#Project_Structure" timestamp="1709405682334">
       <screen x="0" y="0" width="1280" height="752" />
     </state>
-    <state x="446" y="92" key="#com.intellij.ide.util.MemberChooser/0.0.1280.752@0.0.1280.752" timestamp="1709383353933" />
+    <state x="233" y="35" key="#Project_Structure/0.0.1280.752@0.0.1280.752" timestamp="1709405682334" />
+    <state x="446" y="92" key="#com.intellij.ide.util.MemberChooser" timestamp="1709407657886">
+      <screen x="0" y="0" width="1280" height="752" />
+    </state>
+    <state x="446" y="92" key="#com.intellij.ide.util.MemberChooser/0.0.1280.752@0.0.1280.752" timestamp="1709407657886" />
     <state x="414" y="235" width="451" height="290" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1709383450497">
       <screen x="0" y="0" width="1280" height="752" />
     </state>
@@ -58,9 +159,64 @@
       <screen x="0" y="0" width="1280" height="752" />
     </state>
     <state x="371" y="123" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.752@0.0.1280.752" timestamp="1709383470971" />
-    <state x="6" y="0" key="new project wizard" timestamp="1709383413106">
+    <state width="1238" height="233" key="GridCell.Tab.0.bottom" timestamp="1709408877349">
       <screen x="0" y="0" width="1280" height="752" />
     </state>
-    <state x="6" y="0" key="new project wizard/0.0.1280.752@0.0.1280.752" timestamp="1709383413106" />
+    <state width="1238" height="233" key="GridCell.Tab.0.bottom/0.0.1280.752@0.0.1280.752" timestamp="1709408877349" />
+    <state width="1238" height="233" key="GridCell.Tab.0.center" timestamp="1709408877349">
+      <screen x="0" y="0" width="1280" height="752" />
+    </state>
+    <state width="1238" height="233" key="GridCell.Tab.0.center/0.0.1280.752@0.0.1280.752" timestamp="1709408877349" />
+    <state width="1238" height="233" key="GridCell.Tab.0.left" timestamp="1709408877349">
+      <screen x="0" y="0" width="1280" height="752" />
+    </state>
+    <state width="1238" height="233" key="GridCell.Tab.0.left/0.0.1280.752@0.0.1280.752" timestamp="1709408877349" />
+    <state width="1238" height="233" key="GridCell.Tab.0.right" timestamp="1709408877349">
+      <screen x="0" y="0" width="1280" height="752" />
+    </state>
+    <state width="1238" height="233" key="GridCell.Tab.0.right/0.0.1280.752@0.0.1280.752" timestamp="1709408877349" />
+    <state width="1238" height="233" key="GridCell.Tab.1.bottom" timestamp="1709408877349">
+      <screen x="0" y="0" width="1280" height="752" />
+    </state>
+    <state width="1238" height="233" key="GridCell.Tab.1.bottom/0.0.1280.752@0.0.1280.752" timestamp="1709408877349" />
+    <state width="1238" height="233" key="GridCell.Tab.1.center" timestamp="1709408877349">
+      <screen x="0" y="0" width="1280" height="752" />
+    </state>
+    <state width="1238" height="233" key="GridCell.Tab.1.center/0.0.1280.752@0.0.1280.752" timestamp="1709408877349" />
+    <state width="1238" height="233" key="GridCell.Tab.1.left" timestamp="1709408877349">
+      <screen x="0" y="0" width="1280" height="752" />
+    </state>
+    <state width="1238" height="233" key="GridCell.Tab.1.left/0.0.1280.752@0.0.1280.752" timestamp="1709408877349" />
+    <state width="1238" height="233" key="GridCell.Tab.1.right" timestamp="1709408877349">
+      <screen x="0" y="0" width="1280" height="752" />
+    </state>
+    <state width="1238" height="233" key="GridCell.Tab.1.right/0.0.1280.752@0.0.1280.752" timestamp="1709408877349" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1709406365720">
+      <screen x="0" y="0" width="1280" height="752" />
+    </state>
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.752@0.0.1280.752" timestamp="1709406365720" />
+    <state x="324" y="200" key="com.intellij.ide.util.TipDialog" timestamp="1709404890031">
+      <screen x="0" y="0" width="1280" height="752" />
+    </state>
+    <state x="324" y="200" key="com.intellij.ide.util.TipDialog/0.0.1280.752@0.0.1280.752" timestamp="1709404890031" />
+    <state x="252" y="75" width="775" height="600" key="find.popup" timestamp="1709406418287">
+      <screen x="0" y="0" width="1280" height="752" />
+    </state>
+    <state x="252" y="75" width="775" height="600" key="find.popup/0.0.1280.752@0.0.1280.752" timestamp="1709406418287" />
+    <state x="6" y="0" key="new project wizard" timestamp="1709400994669">
+      <screen x="0" y="0" width="1280" height="752" />
+    </state>
+    <state x="6" y="0" key="new project wizard/0.0.1280.752@0.0.1280.752" timestamp="1709400994669" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/client/RpcConsumerClient.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

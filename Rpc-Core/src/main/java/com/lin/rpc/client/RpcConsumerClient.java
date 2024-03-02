@@ -1,4 +1,4 @@
-package com.lin.rpc;
+package com.lin.rpc.client;
 
 import com.lin.rpc.enity.RpcRequest;
 import org.slf4j.Logger;
