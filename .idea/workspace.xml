@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="59592d0a-a1fd-43c5-8b94-14454bfdb299" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="2d8OJwtxSsCcOaU4q7lqyi03RbF" />
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="D:/jar包/git_ruoyi" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.lin" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="lua.app" factoryName="Lua Application">
+      <option name="program" value="lua.exe" />
+      <option name="file" value="" />
+      <option name="workingDir" value="$PROJECT_DIR$/Consumer/src/main/java" />
+      <option name="debuggerType" value="1" />
+      <option name="params" value="" />
+      <option name="charset" value="UTF-8" />
+      <option name="showConsole" value="true" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="59592d0a-a1fd-43c5-8b94-14454bfdb299" name="Default Changelist" comment="" />
+      <created>1709386170983</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1709386170983</updated>
+      <workItem from="1709386172851" duration="1000" />
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="446" y="92" key="#com.intellij.ide.util.MemberChooser" timestamp="1709383353933">
+      <screen x="0" y="0" width="1280" height="752" />
+    </state>
+    <state x="446" y="92" key="#com.intellij.ide.util.MemberChooser/0.0.1280.752@0.0.1280.752" timestamp="1709383353933" />
+    <state x="414" y="235" width="451" height="290" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1709383450497">
+      <screen x="0" y="0" width="1280" height="752" />
+    </state>
+    <state x="414" y="235" width="451" height="290" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.752@0.0.1280.752" timestamp="1709383450497" />
+    <state x="371" y="123" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1709383470971">
+      <screen x="0" y="0" width="1280" height="752" />
+    </state>
+    <state x="371" y="123" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.752@0.0.1280.752" timestamp="1709383470971" />
+    <state x="6" y="0" key="new project wizard" timestamp="1709383413106">
+      <screen x="0" y="0" width="1280" height="752" />
+    </state>
+    <state x="6" y="0" key="new project wizard/0.0.1280.752@0.0.1280.752" timestamp="1709383413106" />
+  </component>
+</project>
