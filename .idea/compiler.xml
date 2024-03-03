@@ -8,10 +8,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Provider" />
-        <module name="Consumer" />
-        <module name="Provider-Common" />
-        <module name="Rpc-Core" />
         <module name="Rpc-Common" />
+        <module name="Provider-Common" />
+        <module name="Consumer" />
+        <module name="Rpc-Core" />
       </profile>
     </annotationProcessing>
   </component>

@@ -1,7 +1,7 @@
 package com.lin;
 
 
-import com.lin.rpc.client.RpcConsumerClientProxy;
+import com.lin.rpc.socket.socketClient.RpcConsumerClientProxy;
 
 public class Consumer {
     public static void main(String[] args) {

@@ -1,22 +1,25 @@
-package com.lin.rpc.client;
+package com.lin.rpc;
 
 import com.lin.rpc.enity.RpcRequest;
-import com.lin.rpc.enity.RpcResponse;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
 /**
- * 动态代理 使调用方无需关注网络传输等细节
+ * RPC客户端动态代理
+ * @author linz
  */
-public class RpcConsumerClientProxy implements InvocationHandler {
-    private String host;
-    private int port;
+public class RpcClientProxy implements InvocationHandler {
 
-    public RpcConsumerClientProxy(String host, int port) {
-        this.host = host;
-        this.port = port;
+    private static final Logger logger = LoggerFactory.getLogger(RpcClientProxy.class);
+
+    private final RpcClient client;
+
+    public RpcClientProxy(RpcClient client) {
+        this.client = client;
     }
 
     @SuppressWarnings("unchecked")
@@ -26,14 +29,13 @@ public class RpcConsumerClientProxy implements InvocationHandler {
 
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+        logger.info("调用方法: {}#{}", method.getDeclaringClass().getName(), method.getName());
         RpcRequest rpcRequest = RpcRequest.builder()
                 .interfaceName(method.getDeclaringClass().getName())
                 .methodName(method.getName())
                 .params(args)
                 .paramsType(method.getParameterTypes())
                 .build();
-
-        RpcConsumerClient rpcClient = new RpcConsumerClient();
-        return ((RpcResponse) rpcClient.SendRequest(rpcRequest, host, port)).getData();
+        return client.sendRequest(rpcRequest);
     }
 }

@@ -3,7 +3,7 @@ package com.lin;
 
 import com.lin.rpc.register.DefaultServiceRegistry;
 import com.lin.rpc.register.ServiceRegister;
-import com.lin.rpc.server.RpcProviderServer;
+import com.lin.rpc.socket.socketServer.RpcProviderServer;
 
 public class TestServer {
 

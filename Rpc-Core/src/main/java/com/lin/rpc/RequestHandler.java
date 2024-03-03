@@ -1,4 +1,4 @@
-package com.lin.rpc.server;
+package com.lin.rpc;
 
 import com.lin.rpc.enity.RpcRequest;
 import com.lin.rpc.enity.RpcResponse;
