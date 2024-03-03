@@ -4,7 +4,6 @@ import com.lin.rpc.RpcClient;
 import com.lin.rpc.RpcClientProxy;
 import com.lin.rpc.netty.client.NettyClient;
 import com.lin.rpc.serializer.KryoSerializer;
-import com.lin.rpc.socket.socketClient.RpcConsumerClientProxy;
 
 public class NettyTestConsumer {
     public static void main(String[] args) {

@@ -2,50 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59592d0a-a1fd-43c5-8b94-14454bfdb299" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/netty/client/ChannelProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/provider/ServiceProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/provider/ServiceProviderImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/register/nacos/NacosServiceRegistry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/register/nacos/ServiceRegistry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/util/RpcMessageChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/util/ThreadPoolFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Consumer/src/main/java/com/lin/NettyTestConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Consumer/src/main/java/com/lin/NettyTestConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Consumer/target/classes/com/lin/NettyTestConsumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/Consumer/target/classes/com/lin/NettyTestConsumer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/src/main/java/com/lin/NettyTestServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/src/main/java/com/lin/NettyTestServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/target/classes/com/lin/NettyTestServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/target/classes/com/lin/NettyTestServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc-Common/src/main/java/com/lin/rpc/enity/RpcRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc-Common/src/main/java/com/lin/rpc/enity/RpcRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc-Common/src/main/java/com/lin/rpc/enity/RpcResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc-Common/src/main/java/com/lin/rpc/enity/RpcResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc-Common/src/main/java/com/lin/rpc/enumeraction/RpcError.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc-Common/src/main/java/com/lin/rpc/enumeraction/RpcError.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc-Common/target/classes/com/lin/rpc/enity/RpcRequest$RpcRequestBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc-Common/target/classes/com/lin/rpc/enity/RpcRequest$RpcRequestBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc-Common/target/classes/com/lin/rpc/enity/RpcRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc-Common/target/classes/com/lin/rpc/enity/RpcRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc-Common/target/classes/com/lin/rpc/enity/RpcResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc-Common/target/classes/com/lin/rpc/enity/RpcResponse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc-Common/target/classes/com/lin/rpc/enumeraction/RpcError.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc-Common/target/classes/com/lin/rpc/enumeraction/RpcError.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc-Core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc-Core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/RequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/handler/RequestHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/RpcClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/RpcClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/RpcClientProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/RpcClientProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/RpcServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/RpcServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/netty/client/NettyClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/netty/client/NettyClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/netty/client/NettyClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/netty/client/NettyClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/netty/server/NettyServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/netty/server/NettyServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/netty/server/NettyServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/netty/server/NettyServerHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/socket/socketClient/RpcConsumerClientProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/socket/socketClient/RpcConsumerClientProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/socket/socketServer/RequestHandlerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/socket/socketServer/RequestHandlerThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/socket/socketServer/RpcProviderServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/socket/socketServer/RpcProviderServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc-Core/target/classes/com/lin/rpc/RequestHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc-Core/target/classes/com/lin/rpc/RpcClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc-Core/target/classes/com/lin/rpc/RpcClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc-Core/target/classes/com/lin/rpc/RpcClientProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc-Core/target/classes/com/lin/rpc/RpcClientProxy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc-Core/target/classes/com/lin/rpc/RpcServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc-Core/target/classes/com/lin/rpc/RpcServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc-Core/target/classes/com/lin/rpc/netty/client/NettyClient$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc-Core/target/classes/com/lin/rpc/netty/client/NettyClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc-Core/target/classes/com/lin/rpc/netty/client/NettyClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc-Core/target/classes/com/lin/rpc/netty/client/NettyClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc-Core/target/classes/com/lin/rpc/netty/client/NettyClientHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc-Core/target/classes/com/lin/rpc/netty/server/NettyServer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc-Core/target/classes/com/lin/rpc/netty/server/NettyServer$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc-Core/target/classes/com/lin/rpc/netty/server/NettyServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc-Core/target/classes/com/lin/rpc/netty/server/NettyServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc-Core/target/classes/com/lin/rpc/netty/server/NettyServerHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc-Core/target/classes/com/lin/rpc/netty/server/NettyServerHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc-Core/target/classes/com/lin/rpc/socket/socketClient/RpcConsumerClientProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc-Core/target/classes/com/lin/rpc/socket/socketClient/RpcConsumerClientProxy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc-Core/target/classes/com/lin/rpc/socket/socketServer/RequestHandlerThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc-Core/target/classes/com/lin/rpc/socket/socketServer/RequestHandlerThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc-Core/target/classes/com/lin/rpc/socket/socketServer/RpcProviderServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc-Core/target/classes/com/lin/rpc/socket/socketServer/RpcProviderServer.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +69,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NettyTestConsumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="NettyTestConsumer" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.lin.NettyTestConsumer" />
       <module name="Consumer" />
       <extension name="coverage">
@@ -158,6 +118,12 @@
       <option name="showConsole" value="true" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Application.Consumer" />
+      <item itemvalue="Application.NettyTestConsumer" />
+      <item itemvalue="Application.NettyTestServer" />
+      <item itemvalue="Application.TestServer" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.NettyTestConsumer" />
@@ -182,7 +148,7 @@
       <updated>1709386170983</updated>
       <workItem from="1709386172851" duration="7259000" />
       <workItem from="1709404890392" duration="4896000" />
-      <workItem from="1709444931504" duration="18382000" />
+      <workItem from="1709444931504" duration="19447000" />
     </task>
     <servers />
   </component>
@@ -194,6 +160,10 @@
       <screen x="0" y="0" width="1280" height="752" />
     </state>
     <state x="233" y="35" key="#Project_Structure/0.0.1280.752@0.0.1280.752" timestamp="1709449663174" />
+    <state x="96" y="31" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1709481445505">
+      <screen x="0" y="0" width="1280" height="752" />
+    </state>
+    <state x="96" y="31" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.752@0.0.1280.752" timestamp="1709481445505" />
     <state x="446" y="92" key="#com.intellij.ide.util.MemberChooser" timestamp="1709462365372">
       <screen x="0" y="0" width="1280" height="752" />
     </state>
@@ -214,22 +184,22 @@
       <screen x="0" y="0" width="1280" height="752" />
     </state>
     <state x="385" y="224" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.752@0.0.1280.752" timestamp="1709449643172" />
-    <state width="1238" height="233" key="GridCell.Tab.0.bottom" timestamp="1709480281946">
+    <state width="1238" height="346" key="GridCell.Tab.0.bottom" timestamp="1709481460266">
       <screen x="0" y="0" width="1280" height="752" />
     </state>
-    <state width="1238" height="233" key="GridCell.Tab.0.bottom/0.0.1280.752@0.0.1280.752" timestamp="1709480281946" />
-    <state width="1238" height="233" key="GridCell.Tab.0.center" timestamp="1709480281945">
+    <state width="1238" height="346" key="GridCell.Tab.0.bottom/0.0.1280.752@0.0.1280.752" timestamp="1709481460266" />
+    <state width="1238" height="346" key="GridCell.Tab.0.center" timestamp="1709481460266">
       <screen x="0" y="0" width="1280" height="752" />
     </state>
-    <state width="1238" height="233" key="GridCell.Tab.0.center/0.0.1280.752@0.0.1280.752" timestamp="1709480281945" />
-    <state width="1238" height="233" key="GridCell.Tab.0.left" timestamp="1709480281945">
+    <state width="1238" height="346" key="GridCell.Tab.0.center/0.0.1280.752@0.0.1280.752" timestamp="1709481460266" />
+    <state width="1238" height="346" key="GridCell.Tab.0.left" timestamp="1709481460266">
       <screen x="0" y="0" width="1280" height="752" />
     </state>
-    <state width="1238" height="233" key="GridCell.Tab.0.left/0.0.1280.752@0.0.1280.752" timestamp="1709480281945" />
-    <state width="1238" height="233" key="GridCell.Tab.0.right" timestamp="1709480281946">
+    <state width="1238" height="346" key="GridCell.Tab.0.left/0.0.1280.752@0.0.1280.752" timestamp="1709481460266" />
+    <state width="1238" height="346" key="GridCell.Tab.0.right" timestamp="1709481460266">
       <screen x="0" y="0" width="1280" height="752" />
     </state>
-    <state width="1238" height="233" key="GridCell.Tab.0.right/0.0.1280.752@0.0.1280.752" timestamp="1709480281946" />
+    <state width="1238" height="346" key="GridCell.Tab.0.right/0.0.1280.752@0.0.1280.752" timestamp="1709481460266" />
     <state width="1238" height="233" key="GridCell.Tab.1.bottom" timestamp="1709480281946">
       <screen x="0" y="0" width="1280" height="752" />
     </state>
