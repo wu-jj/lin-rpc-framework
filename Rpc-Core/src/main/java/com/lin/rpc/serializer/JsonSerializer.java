@@ -9,6 +9,12 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 
 import java.io.IOException;
 
+/**
+ * 基于 JSON 的序列化器有一个毛病，就是在某个类的属性反序列化时，
+ * 如果属性声明为 Object 的，就会造成反序列化出错，通常会把 Object 属性直接反序列化成 String 类型，就需要其他参数辅助序列化。
+ * 并且，JSON 序列化器是基于字符串（JSON 串）的，占用空间较大且速度较慢。
+ */
+
 public class JsonSerializer implements CommonSerializer{
     private static final Logger logger = LoggerFactory.getLogger(JsonSerializer.class);
 
