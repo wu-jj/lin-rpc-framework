@@ -1,6 +1,6 @@
 package com.lin.rpc.socket.socketServer;
 
-import com.lin.rpc.RequestHandler;
+import com.lin.rpc.handler.RequestHandler;
 import com.lin.rpc.enity.RpcRequest;
 import com.lin.rpc.enity.RpcResponse;
 import com.lin.rpc.register.ServiceRegister;
@@ -32,8 +32,8 @@ public class RequestHandlerThread implements Runnable{
             RpcRequest rpcRequest = (RpcRequest) objectInputStream.readObject();
             String interfaceName = rpcRequest.getInterfaceName();
             Object service = serviceRegister.getService(interfaceName);
-            Object result = requestHandler.handle(rpcRequest, service);
-            objectOutputStream.writeObject(RpcResponse.success(result));
+            Object result = requestHandler.handle(rpcRequest);
+            objectOutputStream.writeObject(RpcResponse.success(result,rpcRequest.getRequestId()));
             objectOutputStream.flush();
         } catch (IOException | ClassNotFoundException e) {
             logger.error("调用或发送时有错误发生：", e);

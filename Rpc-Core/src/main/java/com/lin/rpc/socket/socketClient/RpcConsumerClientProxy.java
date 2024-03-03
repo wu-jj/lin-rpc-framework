@@ -6,6 +6,7 @@ import com.lin.rpc.enity.RpcResponse;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
+import java.util.UUID;
 
 /**
  * 动态代理 使调用方无需关注网络传输等细节
@@ -28,6 +29,7 @@ public class RpcConsumerClientProxy implements InvocationHandler {
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         RpcRequest rpcRequest = RpcRequest.builder()
                 .interfaceName(method.getDeclaringClass().getName())
+                .requestId(UUID.randomUUID().toString())
                 .methodName(method.getName())
                 .params(args)
                 .paramsType(method.getParameterTypes())

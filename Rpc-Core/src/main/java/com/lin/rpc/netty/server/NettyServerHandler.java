@@ -2,9 +2,9 @@ package com.lin.rpc.netty.server;
 
 import com.lin.rpc.enity.RpcRequest;
 import com.lin.rpc.enity.RpcResponse;
-import com.lin.rpc.register.DefaultServiceRegistry;
-import com.lin.rpc.register.ServiceRegister;
-import com.lin.rpc.RequestHandler;
+import com.lin.rpc.handler.RequestHandler;
+import com.lin.rpc.register.nacos.NacosServiceRegistry;
+import com.lin.rpc.register.nacos.ServiceRegistry;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelFutureListener;
 import io.netty.channel.ChannelHandlerContext;
@@ -18,21 +18,23 @@ public class NettyServerHandler extends SimpleChannelInboundHandler<RpcRequest> 
 
     private static final Logger logger = LoggerFactory.getLogger(NettyServerHandler.class);
     private static RequestHandler requestHandler;
-    private static ServiceRegister serviceRegister;
+    private static ServiceRegistry serviceRegistry;
 
     static {
         requestHandler = new RequestHandler();
-        serviceRegister = new DefaultServiceRegistry();
+        serviceRegistry = new NacosServiceRegistry();
     }
 
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, RpcRequest msg) throws Exception {
         try {
-            logger.info("服务器接收到请求: {}", msg);
-            String interfaceName = msg.getInterfaceName();
-            Object service = serviceRegister.getService(interfaceName);
+           /* String interfaceName = msg.getInterfaceName();
+            Object service = serviceRegistry.findServiceByServiceName(interfaceName);
             Object result = requestHandler.handle(msg, service);
-            ChannelFuture future = ctx.writeAndFlush(RpcResponse.success(result));
+            ChannelFuture future = ctx.writeAndFlush(RpcResponse.success(result));*/
+            logger.info("服务器接收到请求: {}", msg);
+            Object result = requestHandler.handle(msg);
+            ChannelFuture future = ctx.writeAndFlush(RpcResponse.success(result, msg.getRequestId()));
             future.addListener(ChannelFutureListener.CLOSE);
         } finally {
             ReferenceCountUtil.release(msg);
