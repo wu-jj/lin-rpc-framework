@@ -9,8 +9,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Provider" />
         <module name="Rpc-Common" />
-        <module name="Provider-Common" />
         <module name="Consumer" />
+        <module name="Provider-Common" />
         <module name="Rpc-Core" />
       </profile>
     </annotationProcessing>

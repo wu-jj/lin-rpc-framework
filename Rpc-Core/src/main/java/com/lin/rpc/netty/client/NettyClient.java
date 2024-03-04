@@ -5,6 +5,7 @@ import com.lin.rpc.enity.RpcRequest;
 import com.lin.rpc.enity.RpcResponse;
 import com.lin.rpc.enumeraction.RpcError;
 import com.lin.rpc.exception.RpcException;
+import com.lin.rpc.loadbalancer.RoundRobinLoadBalancer;
 import com.lin.rpc.register.nacos.NacosServiceRegistry;
 import com.lin.rpc.register.nacos.ServiceRegistry;
 import com.lin.rpc.serializer.CommonSerializer;
@@ -30,7 +31,7 @@ public class NettyClient implements RpcClient {
 
 
     public NettyClient() {
-        this.serviceRegistry = new NacosServiceRegistry();
+        this.serviceRegistry = new NacosServiceRegistry(null);
     }
 
     static {

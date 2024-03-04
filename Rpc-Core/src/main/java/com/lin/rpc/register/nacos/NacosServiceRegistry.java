@@ -6,6 +6,8 @@ import com.alibaba.nacos.api.naming.NamingService;
 import com.alibaba.nacos.api.naming.pojo.Instance;
 import com.lin.rpc.enumeraction.RpcError;
 import com.lin.rpc.exception.RpcException;
+import com.lin.rpc.loadbalancer.LoadBalancer;
+import com.lin.rpc.loadbalancer.RoundRobinLoadBalancer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -15,8 +17,16 @@ import java.util.List;
 public class NacosServiceRegistry implements ServiceRegistry {
     private static final Logger logger = LoggerFactory.getLogger(NacosServiceRegistry.class);
 
+    private final LoadBalancer loadBalancer;
     private static final String SERVER_ADDR = "127.0.0.1:8848";
     private static final NamingService namingService;
+
+    public NacosServiceRegistry(LoadBalancer loadBalancer){
+        if (loadBalancer == null) this.loadBalancer = new RoundRobinLoadBalancer();
+        else {
+            this.loadBalancer = loadBalancer;
+        }
+    }
 
     static {
         try {
@@ -42,7 +52,7 @@ public class NacosServiceRegistry implements ServiceRegistry {
     public InetSocketAddress findServiceByServiceName(String serviceName) {
         try {
             List<Instance> Instances = namingService.getAllInstances(serviceName);
-            Instance instance = Instances.get(0);
+            Instance instance = loadBalancer.select(Instances);
             return new InetSocketAddress(instance.getIp(),instance.getPort());
         } catch (NacosException e) {
             logger.error("获取服务时有错误发生:", e);

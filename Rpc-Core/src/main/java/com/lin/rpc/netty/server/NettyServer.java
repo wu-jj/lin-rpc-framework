@@ -5,6 +5,7 @@ import com.lin.rpc.codec.CommonDecoder;
 import com.lin.rpc.codec.CommonEncoder;
 import com.lin.rpc.enumeraction.RpcError;
 import com.lin.rpc.exception.RpcException;
+import com.lin.rpc.hook.ShutdownHook;
 import com.lin.rpc.provider.ServiceProvider;
 import com.lin.rpc.provider.ServiceProviderImpl;
 import com.lin.rpc.register.nacos.NacosServiceRegistry;
@@ -39,7 +40,7 @@ public class NettyServer implements RpcServer {
     public NettyServer(String host, int port) {
         this.host = host;
         this.port = port;
-        serviceRegistry = new NacosServiceRegistry();
+        serviceRegistry = new NacosServiceRegistry(null);
         serviceProvider = new ServiceProviderImpl();
     }
 
@@ -56,6 +57,7 @@ public class NettyServer implements RpcServer {
 
     @Override
     public void start() {
+        ShutdownHook.getShutdownHook().addClearAllHook();
         EventLoopGroup bossGroup = new NioEventLoopGroup();
         EventLoopGroup workerGroup = new NioEventLoopGroup();
         try {
