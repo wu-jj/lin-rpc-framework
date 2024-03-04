@@ -5,10 +5,10 @@ import com.lin.rpc.enity.RpcRequest;
 import com.lin.rpc.enity.RpcResponse;
 import com.lin.rpc.enumeraction.RpcError;
 import com.lin.rpc.exception.RpcException;
-import com.lin.rpc.loadbalancer.RoundRobinLoadBalancer;
 import com.lin.rpc.register.nacos.NacosServiceRegistry;
 import com.lin.rpc.register.nacos.ServiceRegistry;
 import com.lin.rpc.serializer.CommonSerializer;
+import com.lin.rpc.spi.ExtensionLoader;
 import com.lin.rpc.util.RpcMessageChecker;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.*;
@@ -18,19 +18,29 @@ import io.netty.util.AttributeKey;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.IOException;
 import java.net.InetSocketAddress;
+import java.util.LinkedHashMap;
 import java.util.concurrent.atomic.AtomicReference;
 
 public class NettyClient implements RpcClient {
 
     private static final Logger logger = LoggerFactory.getLogger(NettyClient.class);
     private static final Bootstrap bootstrap;
-    private final ServiceRegistry serviceRegistry;
+    private  ServiceRegistry serviceRegistry;
 
     private CommonSerializer serializer;
 
 
     public NettyClient() {
+        try {
+            new ExtensionLoader().loadExtension(ServiceRegistry.class);
+            LinkedHashMap<String, Class> registerMap = ExtensionLoader.EXTENSION_LOADER_CLASS_CACHE.get(ServiceRegistry.class.getName());
+
+        } catch (Exception e) {
+            logger.error("SPI注册服务实例化发生异常:",e);
+        }
+
         this.serviceRegistry = new NacosServiceRegistry(null);
     }
 

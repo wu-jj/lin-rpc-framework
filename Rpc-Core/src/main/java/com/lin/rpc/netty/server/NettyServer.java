@@ -2,6 +2,7 @@ package com.lin.rpc.netty.server;
 
 import com.lin.rpc.codec.CommonDecoder;
 import com.lin.rpc.codec.CommonEncoder;
+import com.lin.rpc.filter.server.ServerFilterChain;
 import com.lin.rpc.hook.ShutdownHook;
 import com.lin.rpc.provider.ServiceProviderImpl;
 import com.lin.rpc.register.nacos.NacosServiceRegistry;
@@ -32,6 +33,9 @@ public class NettyServer extends AbstractRpcServer {
     }
 
     public NettyServer(String host, int port, Integer serializer) {
+        ServerFilterChain serverFilterChain = new ServerFilterChain();
+
+
         this.host = host;
         this.port = port;
         serviceRegistry = new NacosServiceRegistry(null);

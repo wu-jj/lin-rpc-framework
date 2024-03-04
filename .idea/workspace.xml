@@ -2,24 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59592d0a-a1fd-43c5-8b94-14454bfdb299" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Rpc-Common/src/main/java/com/lin/rpc/util/ReflectUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/annotation/Service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/annotation/ServiceScan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/socket/socketServer/AbstractRpcServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/filter/IFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/filter/server/IServerFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/filter/server/MessageFilterImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/filter/server/ServerFilterChain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/spi/ExtensionLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Rpc-Core/src/main/resources/META-INF/linz/com.lin.rpc.register.nacos.NacosServiceRegistry" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Rpc-Core/src/main/resources/META-INF/log4j.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/src/main/java/com/lin/HelloServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/src/main/java/com/lin/HelloServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/src/main/java/com/lin/NettyTestServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/src/main/java/com/lin/NettyTestServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc-Common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc-Common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc-Common/src/main/java/com/lin/rpc/enumeraction/RpcError.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc-Common/src/main/java/com/lin/rpc/enumeraction/RpcError.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc-Common/target/classes/com/lin/rpc/enumeraction/RpcError.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc-Common/target/classes/com/lin/rpc/enumeraction/RpcError.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/RpcServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/RpcServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Consumer/src/main/java/com/lin/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Consumer/src/main/java/com/lin/Consumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Consumer/src/main/java/com/lin/NettyTestConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Consumer/src/main/java/com/lin/NettyTestConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Consumer/target/classes/com/lin/NettyTestConsumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/Consumer/target/classes/com/lin/NettyTestConsumer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/netty/client/NettyClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/netty/client/NettyClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/netty/server/NettyServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/netty/server/NettyServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/provider/ServiceProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/provider/ServiceProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/provider/ServiceProviderImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/provider/ServiceProviderImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/serializer/CommonSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/serializer/CommonSerializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc-Core/target/classes/com/lin/rpc/netty/server/NettyServer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc-Core/target/classes/com/lin/rpc/netty/server/NettyServer$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rpc-Core/target/classes/com/lin/rpc/netty/server/NettyServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc-Core/target/classes/com/lin/rpc/netty/server/NettyServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/netty/server/NettyServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc-Core/src/main/java/com/lin/rpc/netty/server/NettyServerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc-Core/target/classes/com/lin/rpc/netty/client/NettyClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc-Core/target/classes/com/lin/rpc/netty/client/NettyClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rpc-Core/target/classes/com/lin/rpc/netty/server/NettyServerHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rpc-Core/target/classes/com/lin/rpc/netty/server/NettyServerHandler.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,23 +27,31 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="AnnotationType" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Automatic-registration-of-Spring-version-services" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2d8OJwtxSsCcOaU4q7lqyi03RbF" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -70,7 +76,7 @@
       <recent name="com.lin.rpc.server" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.NettyTestServer">
+  <component name="RunManager" selected="Application.NettyTestConsumer">
     <configuration name="Consumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.lin.Consumer" />
       <module name="Consumer" />
@@ -135,6 +141,7 @@
         <item itemvalue="Application.NettyTestServer" />
         <item itemvalue="Application.Consumer" />
         <item itemvalue="Application.TestServer" />
+        <item itemvalue="Application.NettyTestConsumer" />
       </list>
     </recent_temporary>
   </component>
@@ -154,12 +161,16 @@
       <workItem from="1709386172851" duration="7259000" />
       <workItem from="1709404890392" duration="4896000" />
       <workItem from="1709444931504" duration="20961000" />
-      <workItem from="1709531767888" duration="8620000" />
+      <workItem from="1709531767888" duration="21398000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="233" y="35" key="#Project_Structure" timestamp="1709539537529">
@@ -170,10 +181,14 @@
       <screen x="0" y="0" width="1280" height="752" />
     </state>
     <state x="96" y="31" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.752@0.0.1280.752" timestamp="1709481445505" />
-    <state x="446" y="92" key="#com.intellij.ide.util.MemberChooser" timestamp="1709540477366">
+    <state x="273" y="179" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1709556469369">
       <screen x="0" y="0" width="1280" height="752" />
     </state>
-    <state x="446" y="92" key="#com.intellij.ide.util.MemberChooser/0.0.1280.752@0.0.1280.752" timestamp="1709540477366" />
+    <state x="273" y="179" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.752@0.0.1280.752" timestamp="1709556469369" />
+    <state x="446" y="92" key="#com.intellij.ide.util.MemberChooser" timestamp="1709563462243">
+      <screen x="0" y="0" width="1280" height="752" />
+    </state>
+    <state x="446" y="92" key="#com.intellij.ide.util.MemberChooser/0.0.1280.752@0.0.1280.752" timestamp="1709563462243" />
     <state x="262" y="292" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1709532438724">
       <screen x="0" y="0" width="1280" height="752" />
     </state>
@@ -190,38 +205,42 @@
       <screen x="0" y="0" width="1280" height="752" />
     </state>
     <state x="385" y="224" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.752@0.0.1280.752" timestamp="1709449643172" />
-    <state width="1238" height="346" key="GridCell.Tab.0.bottom" timestamp="1709540781660">
+    <state width="1238" height="233" key="GridCell.Tab.0.bottom" timestamp="1709564269038">
       <screen x="0" y="0" width="1280" height="752" />
     </state>
-    <state width="1238" height="346" key="GridCell.Tab.0.bottom/0.0.1280.752@0.0.1280.752" timestamp="1709540781660" />
-    <state width="1238" height="346" key="GridCell.Tab.0.center" timestamp="1709540781660">
+    <state width="1238" height="233" key="GridCell.Tab.0.bottom/0.0.1280.752@0.0.1280.752" timestamp="1709564269038" />
+    <state width="1238" height="233" key="GridCell.Tab.0.center" timestamp="1709564269038">
       <screen x="0" y="0" width="1280" height="752" />
     </state>
-    <state width="1238" height="346" key="GridCell.Tab.0.center/0.0.1280.752@0.0.1280.752" timestamp="1709540781660" />
-    <state width="1238" height="346" key="GridCell.Tab.0.left" timestamp="1709540781660">
+    <state width="1238" height="233" key="GridCell.Tab.0.center/0.0.1280.752@0.0.1280.752" timestamp="1709564269038" />
+    <state width="1238" height="233" key="GridCell.Tab.0.left" timestamp="1709564269038">
       <screen x="0" y="0" width="1280" height="752" />
     </state>
-    <state width="1238" height="346" key="GridCell.Tab.0.left/0.0.1280.752@0.0.1280.752" timestamp="1709540781660" />
-    <state width="1238" height="346" key="GridCell.Tab.0.right" timestamp="1709540781660">
+    <state width="1238" height="233" key="GridCell.Tab.0.left/0.0.1280.752@0.0.1280.752" timestamp="1709564269038" />
+    <state width="1238" height="233" key="GridCell.Tab.0.right" timestamp="1709564269038">
       <screen x="0" y="0" width="1280" height="752" />
     </state>
-    <state width="1238" height="346" key="GridCell.Tab.0.right/0.0.1280.752@0.0.1280.752" timestamp="1709540781660" />
-    <state width="1238" height="233" key="GridCell.Tab.1.bottom" timestamp="1709480770541">
+    <state width="1238" height="233" key="GridCell.Tab.0.right/0.0.1280.752@0.0.1280.752" timestamp="1709564269038" />
+    <state width="1238" height="233" key="GridCell.Tab.1.bottom" timestamp="1709564269038">
       <screen x="0" y="0" width="1280" height="752" />
     </state>
-    <state width="1238" height="233" key="GridCell.Tab.1.bottom/0.0.1280.752@0.0.1280.752" timestamp="1709480770541" />
-    <state width="1238" height="233" key="GridCell.Tab.1.center" timestamp="1709480770541">
+    <state width="1238" height="233" key="GridCell.Tab.1.bottom/0.0.1280.752@0.0.1280.752" timestamp="1709564269038" />
+    <state width="1238" height="233" key="GridCell.Tab.1.center" timestamp="1709564269038">
       <screen x="0" y="0" width="1280" height="752" />
     </state>
-    <state width="1238" height="233" key="GridCell.Tab.1.center/0.0.1280.752@0.0.1280.752" timestamp="1709480770541" />
-    <state width="1238" height="233" key="GridCell.Tab.1.left" timestamp="1709480770541">
+    <state width="1238" height="233" key="GridCell.Tab.1.center/0.0.1280.752@0.0.1280.752" timestamp="1709564269038" />
+    <state width="1238" height="233" key="GridCell.Tab.1.left" timestamp="1709564269038">
       <screen x="0" y="0" width="1280" height="752" />
     </state>
-    <state width="1238" height="233" key="GridCell.Tab.1.left/0.0.1280.752@0.0.1280.752" timestamp="1709480770541" />
-    <state width="1238" height="233" key="GridCell.Tab.1.right" timestamp="1709480770541">
+    <state width="1238" height="233" key="GridCell.Tab.1.left/0.0.1280.752@0.0.1280.752" timestamp="1709564269038" />
+    <state width="1238" height="233" key="GridCell.Tab.1.right" timestamp="1709564269038">
       <screen x="0" y="0" width="1280" height="752" />
     </state>
-    <state width="1238" height="233" key="GridCell.Tab.1.right/0.0.1280.752@0.0.1280.752" timestamp="1709480770541" />
+    <state width="1238" height="233" key="GridCell.Tab.1.right/0.0.1280.752@0.0.1280.752" timestamp="1709564269038" />
+    <state x="350" y="92" key="MultipleFileMergeDialog" timestamp="1709542009757">
+      <screen x="0" y="0" width="1280" height="752" />
+    </state>
+    <state x="350" y="92" key="MultipleFileMergeDialog/0.0.1280.752@0.0.1280.752" timestamp="1709542009757" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1709448614911">
       <screen x="0" y="0" width="1280" height="752" />
     </state>
@@ -234,10 +253,18 @@
       <screen x="0" y="0" width="1280" height="752" />
     </state>
     <state x="252" y="75" width="779" height="600" key="find.popup/0.0.1280.752@0.0.1280.752" timestamp="1709532312114" />
-    <state x="6" y="0" key="new project wizard" timestamp="1709400994669">
+    <state x="406" y="88" key="git4idea.branch.GitSmartOperationDialog" timestamp="1709542006723">
       <screen x="0" y="0" width="1280" height="752" />
     </state>
-    <state x="6" y="0" key="new project wizard/0.0.1280.752@0.0.1280.752" timestamp="1709400994669" />
+    <state x="406" y="88" key="git4idea.branch.GitSmartOperationDialog/0.0.1280.752@0.0.1280.752" timestamp="1709542006723" />
+    <state x="338" y="167" key="git4idea.merge.GitPullDialog" timestamp="1709541979575">
+      <screen x="0" y="0" width="1280" height="752" />
+    </state>
+    <state x="338" y="167" key="git4idea.merge.GitPullDialog/0.0.1280.752@0.0.1280.752" timestamp="1709541979575" />
+    <state x="6" y="0" key="new project wizard" timestamp="1709557709867">
+      <screen x="0" y="0" width="1280" height="752" />
+    </state>
+    <state x="6" y="0" key="new project wizard/0.0.1280.752@0.0.1280.752" timestamp="1709557709867" />
     <state x="303" y="74" width="672" height="678" key="search.everywhere.popup" timestamp="1709409241526">
       <screen x="0" y="0" width="1280" height="752" />
     </state>

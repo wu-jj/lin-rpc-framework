@@ -2,6 +2,7 @@ package com.lin.rpc.netty.server;
 
 import com.lin.rpc.enity.RpcRequest;
 import com.lin.rpc.enity.RpcResponse;
+import com.lin.rpc.filter.server.ServerFilterChain;
 import com.lin.rpc.handler.RequestHandler;
 import com.lin.rpc.register.nacos.NacosServiceRegistry;
 import com.lin.rpc.register.nacos.ServiceRegistry;
@@ -33,6 +34,8 @@ public class NettyServerHandler extends SimpleChannelInboundHandler<RpcRequest> 
     protected void channelRead0(ChannelHandlerContext ctx, RpcRequest msg) throws Exception {
         threadPool.execute(() -> {
             try {
+                ServerFilterChain serverFilterChain = new ServerFilterChain();
+                serverFilterChain.doFilter(msg);
                 logger.info("服务器接收到请求: {}", msg);
                 Object result = requestHandler.handle(msg);
                 ChannelFuture future = ctx.writeAndFlush(RpcResponse.success(result, msg.getRequestId()));
