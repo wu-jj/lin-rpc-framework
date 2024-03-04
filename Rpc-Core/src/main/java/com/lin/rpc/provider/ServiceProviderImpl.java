@@ -18,8 +18,7 @@ public class ServiceProviderImpl implements ServiceProvider {
     private static final Map<String, Object> serviceMap = new ConcurrentHashMap<>();
     private static final Set<String> registeredService = ConcurrentHashMap.newKeySet();
     @Override
-    public <T> void addServiceProvider(T service) {
-        String serviceName = service.getClass().getCanonicalName();
+    public <T> void addServiceProvider(T service, String serviceName) {
         if (registeredService.contains(serviceName)) return;
         registeredService.add(serviceName);
         Class<?>[] interfaces = service.getClass().getInterfaces();
@@ -31,6 +30,7 @@ public class ServiceProviderImpl implements ServiceProvider {
         }
         logger.info("向接口: {} 注册服务: {}", interfaces, serviceName);
     }
+
 
     @Override
     public Object getServiceProvider(String serviceName) {
